@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'firebase_options.dart';
+import 'loading.dart';
 import 'login.dart';
 
 class TravelApp extends StatelessWidget {
@@ -12,9 +13,10 @@ class TravelApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'TravelApp',
-      initialRoute: "/login",
+      initialRoute: "/loading",
       routes: {
         '/login': (BuildContext context) => const LoginPage(),
+        '/loading': (BuildContext context) => const LoadingPage(),
         // '/home': (BuildContext context) => const HomePage(),
         // '/profile': (BuildContext context) => const ProfilePage(),
         // '/upload': (BuildContext context) => const UploadPage(),
